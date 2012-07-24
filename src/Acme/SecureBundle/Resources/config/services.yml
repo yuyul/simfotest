@@ -1,0 +1,7 @@
+parameters:
+#    secure.example.class: Acme\SecureBundle\Example
+
+services:
+#    secure.example:
+#        class: %secure.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

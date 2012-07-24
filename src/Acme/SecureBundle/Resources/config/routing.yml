@@ -1,0 +1,8 @@
+SecureBundle_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: SecureBundle:Default:index }
+
+test:
+    pattern: /test
+    defaults: { _controller: SecureBundle:Test:test }
+    

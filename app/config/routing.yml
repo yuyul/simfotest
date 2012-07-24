@@ -1,0 +1,14 @@
+SecureBundle:
+    resource: "@SecureBundle/Resources/config/routing.yml"
+    prefix:   /
+
+AcmeMainBundle:
+    resource: "@AcmeMainBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
+    
+# Internal routing configuration to handle ESI
+#_internal:
+#   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#   prefix:   /_internal
