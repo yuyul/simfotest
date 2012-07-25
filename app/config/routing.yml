@@ -1,3 +1,8 @@
+CitaBundle:
+    resource: "@CitaBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 SecureBundle:
     resource: "@SecureBundle/Resources/config/routing.yml"
     prefix:   /

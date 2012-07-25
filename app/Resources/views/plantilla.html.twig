@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{% block title %}{% endblock %} | CitaPrevia2.0</title>
+{% block stylesheets %}
+	<style>
+		#cabecera {
+			background-color: #555;
+			color: #fff;
+			width: 80%;
+			height:20%;
+		}
+		
+		#logo {
+			
+		}
+	</style>
+{% endblock %}
+</head>
+<body id="{% block id '' %}">
+<div id="contenedor">
+	<div id="cabecera">
+		<div id="logo">
+			<h1>Ayuntamiento Test</h1>
+		</div>
+		<div id="menucabecera">
+			Inicio | Otros | <a href="{{ path('admin_usuario') }}">Administración</a>
+		</div>
+	</div>
+	
+	{% block body %}{% endblock %}
+
+	<footer>
+		 &copy; {{ 'now'|date('Y') }} - CitaPrevia2.0
+		<a href="{{ path('_welcome') }}">Ayuda</a>
+		<a href="{{ path('_welcome') }}">Contacto</a>
+		<a href="{{ path('_welcome') }}">Privacidad</a>
+		<a href="{{ path('_welcome') }}">Sobre nosotros</a>
+	</footer>
+{% block javascripts %}{% endblock %}
+</div>
+</body>
+</html>
